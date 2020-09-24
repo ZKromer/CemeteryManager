@@ -15,6 +15,10 @@ table, th, td {
 	text-align:center;
 	width: 500px;
 	border:solid !important;
-	border-collapse:collapse;
-	
+	border-collapse:collapse;	
+}
+div.mainColumn {
+	position:fixed;
+	top:100px;
+	left:400px;
 }
