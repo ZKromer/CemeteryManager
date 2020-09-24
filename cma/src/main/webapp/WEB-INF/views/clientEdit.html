@@ -10,7 +10,7 @@
 		<h1>Clients</h1>
 	</header>
 	<div>
-		<form method="post">
+		<form action="clientEdit" method="post">
 			<table>
 				<tr>
 					<td>First Name</td>
@@ -36,7 +36,7 @@
 					<td><input type="number" id="spaceId" name="spaceId" th:value="*{spaceId}"/></td>
 				</tr>
 				<tr>
-					<td><button type="submit">Submit</button></td>
+					<td colspan="4"><button type="submit">Submit</button></td>
 				</tr>
 			</table>
 		</form>

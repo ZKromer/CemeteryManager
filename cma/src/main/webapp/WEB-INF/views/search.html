@@ -2,14 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<link rel="stylesheet" href="main.css"/>
+<link href="main.css" rel="stylesheet"/>
 <title>Client Search</title>
 </head>
 <body>
 	<header>
 		<h1>Search Clients</h1>
 	</header>
-	<div>
+	
 		<table>
 			<tr>
 				<th>Last Name</th>
@@ -26,6 +26,7 @@
 				<td th:text="${client.dod}"> Date of Death </td>
 				<td th:text="${client.dob}"> Date of Birth </td>
 		</table>
-	</div>
+	
+	<a href="clientEdit">Add New Client</a>
 </body>
 </html>

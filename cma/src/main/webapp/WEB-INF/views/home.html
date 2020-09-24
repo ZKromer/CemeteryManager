@@ -10,7 +10,22 @@
 		<h1>Catholic Cemeteries</h1>
 	</header>
 	<div>
-		<h4>It's working.</h4>
+		<a href="search">Search Clients</a>
+		<a href="clientEdit">Add Client</a>
+	</div>
+	<div>
+		<table>
+			<tr>
+				<th>Death Anniversaries this Month</th>
+			</tr>
+			<tr th:if="${anniversaries.empty}">
+				<td>No Anniversaries</td>
+			</tr>
+			<tr th:each="client : ${anniversaries}">
+				<td th:text="${client.firstName}"> First Name</td>
+				<td th:text="${client.lastName}"> Last Name</td>
+				<td th:text="${client.dod}"> Date of Death</td>
+		</table>
 	</div>
 </body>
 </html>

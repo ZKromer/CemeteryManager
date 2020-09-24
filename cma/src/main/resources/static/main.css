@@ -1,12 +1,6 @@
 @charset "ISO-8859-1";
 
 
-table {
-	border:solid;
-	border-collapse:collapse;
-	
-}
-
 body {
 	background-color:#d2a679;
 }	
@@ -15,4 +9,12 @@ header {
 	background-color:#009900;
 	text-align:center;
 	height:70px;
+}
+
+table, th, td {
+	text-align:center;
+	width: 500px;
+	border:solid !important;
+	border-collapse:collapse;
+	
 }
