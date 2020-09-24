@@ -21,6 +21,12 @@ public class Client {
 	
 	public Client() {}
 	
+	public Client(String fName, String lName, LocalDate dob, LocalDate dod) {
+		this.firstName = fName;
+		this.lastName = lName;
+		this.dob = dob;
+		this.dod = dod;
+	}
 	
 	public String getFirstName() {
 		return firstName;

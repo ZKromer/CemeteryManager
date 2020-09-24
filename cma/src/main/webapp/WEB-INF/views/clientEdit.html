@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="main.css"/>
+<title>Clients</title>
+</head>
+<body>
+	<header>
+		<h1>Clients</h1>
+	</header>
+	<div>
+		<form method="post">
+			<table>
+				<tr>
+					<td>First Name</td>
+					<td><input type="text" id="firstName" name="firstName" th:value="*{firstName}"/></td>	
+					<td>Last Name</td>
+					<td><input type="text" id="lastName" name="lastName" th:value="*{lastName}"/></td>			
+				</tr>
+				<tr>
+					<td>Date of Birth</td>
+					<td><input type="date" id="dob" name="dob" th:value="*{dob}"/></td>
+					<td>Date of Death</td>
+					<td><input type="date" id="dod" name="dod" th:value="*{dod}"/></td>
+				</tr>
+				<tr>
+					<td>Burial Type</td>
+					<td><select id="burialType" name="burialType">
+						<option value="burial">Burial</option>
+						<option value="cremation burial">Cremation Burial</option>
+						<option value="inurnment">Inurnment</option>
+						<option value="intombment">Intombment</option>
+					</select>
+					<td>Space Number</td>
+					<td><input type="number" id="spaceId" name="spaceId" th:value="*{spaceId}"/></td>
+				</tr>
+				<tr>
+					<td><button type="submit">Submit</button></td>
+				</tr>
+			</table>
+		</form>
+	
+	</div>
+</body>
+</html>
